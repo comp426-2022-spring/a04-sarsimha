@@ -14,7 +14,7 @@ if (row === undefined) {
     const sqlInit = `
         CREATE TABLE accesslog ( id INTEGER PRIMARY KEY, remoteaddr TEXT, remoteuser TEXT, time TEXT, method TEXT, url TEXT,  protocol TEXT, httpversion TEXT, secure TEXT, status TEXT, referer TEXT, useragent TEXT);`;
     db.exec(sqlInit);
-    console.log('Your database has been initialized.');
+    console.log('Database has been initialized.');
 } else {
 // Since the database already exists, echo that to the console.
     console.log('Database exists.')
