@@ -3,8 +3,8 @@ const app = express()
 const db = require("./database.js");
 const morgan = require ('morgan');
 const fs = require('fs');
-var md5 = require('md5');
-const { restart } = require('nodemon');
+// var md5 = require('md5');
+// const { restart } = require('nodemon');
 
 //read unrlencoded and json using express
 app.use(express.urlencoded({extended: true}));
